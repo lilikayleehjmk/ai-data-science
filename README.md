@@ -3,4 +3,4 @@ Practice repository for learning Git, GitHub, and data science.
 
 hello
 
-hihi
+today is saturday
