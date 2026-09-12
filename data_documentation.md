@@ -1,5 +1,16 @@
-Source: Earthdata.Nasa: [text](../../../Downloads/snow_hardness.csv)
+Source: NASA Arctic-Boreal Vulnerability Experiment (ABoVE)
+Citation: Sivy ,K.J., A.W. Nolin, C.L. Cosgroce, and L.R. Prugh (2018). ABoVE: Dall Sheep Track Sinking Depths, Snow Depth, Hardness, and Density, 2017.
 Size: 133 rows, 8 columns
-Features: [text]
- https://d3o6w55j8uz1ro.cloudfront.net/s3-d0f68fa49c8cba12794bb586349f2341/ornl-cumulus-prod-public.s3.us-west-2.amazonaws.com/above/Snowpack_Dall_Sheep_Track/comp/Snowpack_Dall_Sheep_Track.pdf?A-userid=None&Expires=1789102027&Signature=zx3rt1Cie3WU7kcVXDYK~57-KQHPqvd5ZF9gvEFuJiVZOWMNBVfqUAdjjpjbChh1TSb9XIv4Hq0N14xE0tiTTVJtMSlirs9S-RprGqA~zbArKL3y-p~zlewQWemzc8j3VY6OxXHlRY9k2EDqGib7o-5IWLIBLzdTZ~Pc1ECgBVc~lje9F-yBtulNbXcOBwas3IW0eviiDN7YJw7SMDXaUQoB0dyUg6MFqxrZxHO3~YYhm7D3XPLFiF52UYOsdMyLp0ANohOxfb9m25cYW-AlDxR0ERD0EDxbdrmQMy1wKFIjy~miCZBkSlspLRXE3LfA4q~xw4DH2BuZmC~PQjMDPA__&Key-Pair-Id=K30BK6GBUP3FO5
- Potential Issues: None
+Features:
+    track_survery_ID: ID number of the specific track site survery (ranges from 10-45)
+    layer_number: Sequential layer number in the snow pit, measured from surface to ground.
+    depth_top_layer: Distance from the ground to the top of the snow layer in centimeters
+    depth_bottom_layer: Distance from the ground to the bottom of the snow layer in centimeters
+    layer_thickness: Thickness of the specific snow layer in centimeters
+    hand_hardness: Standard hand-hardness code (F = fist, 4F = 4 Fingers, 1F = 1 Finger, P = pencil, K = knife)
+    category: Snow resistance classification ("soft" for index 1-3, "hard" for index 4-5)
+    Index: Numerical scale of snow hardess from 1 (softest) to 5 (hardest)
+ Potential Issues: 
+    Missing values in NASA ABoVE are represented by -9999 and must be filtered during data cleaning.
+    Hand-hardness testing relies on manual field tests in snow pits, which introduces human erorr.
+    The data was collected over a 4 day period (March 19-22, 2017) and at the same location (Jaeger Mesa in Wrangell-St.Elias National Park and Preserve, Alaska), meaning the data may not be an accurate representation of the relationship between snow layer and thickness and snow hardness.
